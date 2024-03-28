@@ -51,4 +51,13 @@ Check for Crytic Relatedness
 ```sh
 plink --file autosomal_chromosomes --genome --min .20 --recode --out relatedness_filtered
 ```
+# Association Analysis 
+Basic Association 
+```sh
+plink --file crytic --assoc --out GWAS_Output
+```
 
+Multi-covariate Association Analysis  
+```sh
+plink --adjust --ci .95 --file crytic --logistic --out GWAS_Output
+```
