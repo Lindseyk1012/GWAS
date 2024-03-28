@@ -47,17 +47,17 @@ Filter Chromosomes
 plink --file maf_removed --chr 1-22 --recode --out autosomal_chromosomes
 ```
 
-Check for Crytic Relatedness 
+Check for Relatedness 
 ```sh
 plink --file autosomal_chromosomes --genome --min .20 --recode --out relatedness_filtered
 ```
 # Association Analysis 
 Basic Association 
 ```sh
-plink --file crytic --assoc --out GWAS_Output
+plink --file relatedness_filtered --assoc --out GWAS_Output
 ```
 
 Multi-covariate Association Analysis  
 ```sh
-plink --adjust --ci .95 --file crytic --logistic --out GWAS_Output
+plink --adjust --ci .95 --file relatedness_filtered --logistic --out GWAS_Output
 ```
