@@ -2,15 +2,15 @@
 # Download Files
 map File:
 ```sh
-/scratch/lindseyKukoly/GWAS/gwas_data.map
+scp /scratch/lindseyKukoly/GWAS/gwas_data.map .
 ```
 ped File:
 ```sh
-/scratch/lindseyKukoly/GWAS/gwas_data.ped
+scp /scratch/lindseyKukoly/GWAS/gwas_data.ped .
 ```
 covar File:
 ```sh
-/scratch/lindseyKukoly/GWAS/gwas_samples.covar
+scp /scratch/lindseyKukoly/GWAS/gwas_samples.covar .
 ```
 
 # Quality Control 
