@@ -2,15 +2,15 @@
 # Download Files
 map File:
 ```sh
-scp /scratch/lindseyKukoly/GWAS/gwas_data.map .
+cp /scratch/lindseyKukoly/GWAS/gwas_data.map .
 ```
 ped File:
 ```sh
-scp /scratch/lindseyKukoly/GWAS/gwas_data.ped .
+cp /scratch/lindseyKukoly/GWAS/gwas_data.ped .
 ```
 covar File:
 ```sh
-scp /scratch/lindseyKukoly/GWAS/gwas_samples.covar .
+cp /scratch/lindseyKukoly/GWAS/gwas_samples.covar .
 ```
 
 # Quality Control 
@@ -29,7 +29,7 @@ Check for Missingness
 ```
 
 ```sh
-/usr/local/plink/plink --noweb geno_removed --mind .10 --recode --out missing_removed
+/usr/local/plink/plink --noweb --file geno_removed --mind .10 --recode --out missing_removed
 ```
 
 Hardy-Weinberg Equilibrium 
