@@ -59,5 +59,5 @@ Basic Association
 
 Multi-covariate Association Analysis  
 ```sh
-/usr/local/plink/plink --noweb --adjust --ci .95 --file relatedness_filtered --logistic --out GWAS_Output
+/usr/local/plink/plink --noweb --adjust --ci .95 --file relatedness_filtered --logistic --out GWAS_Output2
 ```
