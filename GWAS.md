@@ -51,6 +51,13 @@ Check for Relatedness
 ```sh
 /usr/local/plink/plink --noweb --file autosomal_chromosomes --genome --min .20 --recode --out relatedness_filtered
 ```
+
+# Structure
+Check for Population Structure
+```sh
+/usr/local/plink/plink --noweb --file relatedness_filtered --recode structure --out gwas_data_restructured
+```
+
 # Association Analysis 
 Basic Association 
 ```sh
